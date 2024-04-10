@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+#box1 {
+    margin-left: 320px;
+    margin-top: 20px;
+    height: 65px;
+    width: 65px;
+    background: #6e93f7;
+    color: #fff;
+    font-size: 2.5rem;
+    border-radius: 50%;
+}
+
+svg {
+    margin-top: 3px;
+}
+.details {
+    margin-top: 25px;
+    margin-left: 380px;
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #1d2531;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 60px;
+}
+
+.details box {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+}
+
+.details #infoform {
+    margin-top: 30px;
+}
+
+#infoform .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #fff;
+}
+
+#generatebtn {
+    margin-top: 25px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    padding: 9px 0;
+    cursor: pointer;
+    border-radius: 6px;
+    background: #6e93f7;
+    transition: all 0.2s ease;
+}
+
+#generatebtn.active {
+    background: #4070f4;
+    pointer-events: auto;
+}
+
+#generatebtn:hover {
+    background: #0e4bf1;
+    cursor: pointer;
+}
+
+#infoform :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: calc(100% - 32px);
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+    background: #1d2531;
+}
+
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+#infoform .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+#infoform .gender-box {
+    margin-top: 20px;
+}
+
+.gender-box h3 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+#infoform :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+#infoform .gender {
+    column-gap: 5px;
+}
+
+.gender input {
+    accent-color: rgb(130, 106, 251);
+}
+
+#infoform :where(.gender input, .gender label) {
+    cursor: pointer;
+}
+
+.gender label {
+    color: #fff;
+}
+
+.address :where(input, .select-box) {
+    margin-top: 15px;
+}
+
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+#infoform #formbtn {
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #1d2531;
+}
+
+#infoform #formbtn:hover {
+    background: #121a25;
+}
+
+@media screen and (max-width: 500px) {
+    #infoform .column {
+        flex-wrap: wrap;
+    }
+
+    #infoform :where(.gender-option, .gender) {
+        row-gap: 15px;
+    }
+} 
