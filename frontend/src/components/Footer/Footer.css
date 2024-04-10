@@ -1,0 +1,16 @@
+#copyright {
+    position: fixed;
+    height: 25px;
+    bottom: 0;
+    background-color: #fff;
+    color: #333;
+
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#copyright p {
+    margin: 0;
+    font-size: 14px;
+}

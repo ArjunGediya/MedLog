@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.blood-search-container {
+  margin-top: 105px;
+  max-width: 800px;
+  margin: 15px 0 0 340px;
+  padding: 20px;
+  background-color: #1d2531;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  /* Text color */
+}
+
+.blood-search-container h2 {
+  margin-top: -5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.blood-search-container form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blood-search-container div {
+  flex-basis: calc(33.33% - 10px);
+  /* Adjust as needed */
+}
+
+.blood-search-container label {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  display: block;
+}
+
+.blood-search-container input[type="text"] {
+  /* width: calc(100% - 10px); */
+  width: 200px;
+  padding: 12px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #1d2531;
+  /* Input background color */
+  color: #fff;
+  /* Input text color */
+  border: 1px solid #ddd;
+  /* Input border */
+  outline: none;
+}
+
+.blood-search-container input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+.blood-search-container button {
+  padding: 12px 24px;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  background: #6e93f7;
+  transition: all 0.2s ease;
+}
+
+.blood-search-container button:hover {
+  background: #0e4bf1;
+}
+
+/* Record */
+.patient-list h3 {
+  margin-left: 670px;
+  color: #ffffff;
+  font-size: x-large;
+}
+
+.patient-list table {
+  margin-left: 370px;
+  width: 50%;
+  border-collapse: collapse;
+  background-color: #1d2531;
+  color: #ffffff;
+}
+
+.patient-list th,
+.patient-list td {
+  padding: 12px;
+  border: 1px solid #ffffff;
+}
+
+.patient-list th {
+  background-color: #2b3648;
+}
+
+.patient-list tbody tr:nth-child(even) {
+  background-color: #2b3648;
+}
+
+.patient-list tbody tr:hover {
+  background-color: #364357;
+}

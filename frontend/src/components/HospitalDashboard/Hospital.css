@@ -1,0 +1,126 @@
+.searchbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.aadharinput {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 800px;
+}
+
+.aadharsearchButton {
+  height: 42px;
+  width: 100px;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.aadharsearchButton:hover {
+  background-color: #0056b3;
+}
+
+.patientInfo {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  padding-top: 15px;
+  padding-left: 20px;
+  width: 900px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.infolabelname {
+  width: 90px;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.infovaluename {
+  color: white;
+  font-size: large;
+  width: 900px;
+  margin-bottom: 10px;
+}
+
+.infolabelblood {
+  width: 170px;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.infovalueblood {
+  font-size: large;
+  color: white;
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.add-record-form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group-add {
+  flex: 0 0 calc(50% - 10px);
+  margin-bottom: 15px;
+}
+
+.form-group-add label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group-add input[type="text"],
+input[type="file"] {
+  width: 90%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group-add .submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button {
+  height: 42px;
+  width: 200px;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-left: 180px;
+  margin-bottom: 20px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}

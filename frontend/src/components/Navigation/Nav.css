@@ -1,0 +1,53 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  /* padding-top: 10px; */
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+
+  li {
+    padding-top: 12px;
+  }
+
+  a {
+    margin: 10px 30px;
+    position: relative;
+    color: var(--text);
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:before {
+      position: absolute;
+      bottom: -2px;
+      content: "";
+      width: 100%;
+      height: 3px;
+      background: var(--highlight);
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+
+    &:hover {
+      &:before {
+        opacity: 1;
+        transition: 0.5s transform ease, 0.8s opacity ease;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .active {
+    color: var(--highlight);
+
+    &:hover {
+      &:before {
+        opacity: 0;
+      }
+    }
+  }
+}

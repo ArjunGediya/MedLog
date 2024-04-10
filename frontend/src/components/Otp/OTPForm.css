@@ -1,0 +1,89 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:where(.container, #otpform, .input-field, #box1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .container {
+    background: transparent;
+    padding: 30px 65px;
+    border-radius: 12px;
+    row-gap: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); 
+} */
+
+.container #box1 {
+    margin-top: 20px;
+    height: 65px;
+    width: 65px;
+    background: #6e93f7; /* Darker blue for header */
+    color: #fff;
+    font-size: 2.5rem;
+    border-radius: 50%;
+}
+
+svg{
+    margin-top: 3px;
+}
+
+.container h4 {
+    font-size: 1.25rem;
+    color: #eee; /* Lighter text color for better contrast */
+    font-weight: 500;
+}
+
+#otpform .input-field {
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.input-field input {
+    height: 45px;
+    width: 42px;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1.125rem;
+    text-align: center;
+    border: 1px solid #777; /* Darker border color */
+    background: transparent; /* No background color */
+    color: #eee; /* Lighter text color */
+}
+
+.input-field input:focus {
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1); /* Lighter box shadow */
+}
+
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button {
+    display: none;
+}
+
+#otpform #generatebtn {
+    margin-top: 25px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    padding: 9px 0;
+    cursor: pointer;
+    border-radius: 6px;
+    pointer-events: none;
+    background: #6e93f7;
+    /* Darker blue */
+    transition: all 0.2s ease;
+}
+
+#otpform #generatebtn.active {
+    background: #4070f4;
+    /* Slightly lighter blue for active state */
+    pointer-events: auto;
+}
+
+#otpform #generatebtn:hover {
+    background: #0e4bf1;
+    /* Lighter blue on hover */
+}
