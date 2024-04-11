@@ -219,7 +219,8 @@
 
 .products-area-wrapper {
   width: 100%;
-  max-height: 100%;
+  max-height: calc(100vh - 200px);
+  margin-bottom: 40px;
   overflow: auto;
   padding: 0 4px;
 }
@@ -231,6 +232,11 @@
   background-color: var(--app-content-secondary-color);
   position: sticky;
   top: 0;
+  z-index: 1;
+}
+
+.product-cell {
+  z-index: 0;
 }
 
 .tableView .products-row {
